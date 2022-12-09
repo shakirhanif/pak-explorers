@@ -1,7 +1,13 @@
-import '../styles/globals.css'
+import Navebar from "../components/Navebar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Navebar></Navebar>
+      <Component {...pageProps} />
+    </>
+  );
 }
 
-export default MyApp
+export default MyApp;
