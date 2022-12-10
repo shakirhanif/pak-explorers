@@ -76,22 +76,22 @@ export const Navebar = () => {
           }
         >
           <ul>
-            <li className=" p-4 text-xl hover:text-gray-500">
+            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
               <Link href="/">
                 <h1>Home</h1>
               </Link>
             </li>
-            <li className=" p-4 text-xl hover:text-gray-500">
+            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
               <Link href="/#gallery">
                 <h1>Gallery</h1>
               </Link>
             </li>
-            <li className=" p-4 text-xl hover:text-gray-500">
+            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
               <Link href="/work">
                 <h1>Work</h1>
               </Link>
             </li>
-            <li className=" p-4 text-xl hover:text-gray-500">
+            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
               <Link href="/contact">
                 <h1>Contact</h1>
               </Link>
