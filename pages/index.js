@@ -9,10 +9,10 @@ export const Home = () => {
   return (
     <>
       <Head>
-        <title>Pak PhotoAdveturers</title>
+        <title>Pak-Explorers</title>
       </Head>
       <Hero
-        heading="Pak PhotoAdventurers"
+        heading="Pak-Explorers"
         message="A community of professional Photographers to bring farthest corners of Pakistan to nearest of sight."
       ></Hero>
       <Slider slides={slidedata}></Slider>

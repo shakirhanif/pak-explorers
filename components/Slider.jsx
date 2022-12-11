@@ -1,9 +1,27 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import slider1 from "../public/slider-photos/slider1.jpg";
+import slider2 from "../public/slider-photos/slider2.jpg";
+import slider3 from "../public/slider-photos/slider3.jpg";
+import slider4 from "../public/slider-photos/slider4.jpg";
+import slider5 from "../public/slider-photos/slider5.jpg";
+import slider6 from "../public/slider-photos/slider6.jpg";
+import slider7 from "../public/slider-photos/slider7.jpg";
+import slider8 from "../public/slider-photos/slider8.jpg";
 
-export const Slider = ({ slides }) => {
+export const Slider = () => {
   const [current, setCurrent] = useState(0);
+  const slides = [
+    slider1,
+    slider2,
+    slider3,
+    slider4,
+    slider5,
+    slider6,
+    slider7,
+    slider8,
+  ];
   const length = slides.length;
 
   return (
@@ -28,13 +46,7 @@ export const Slider = ({ slides }) => {
                 size={50}
               ></FaArrowCircleLeft>
               {index === current ? (
-                <Image
-                  src={x.image}
-                  alt="image"
-                  width={1440}
-                  height={600}
-                  cover
-                />
+                <Image src={x} alt="image" width={1440} height={600} cover />
               ) : null}
               <FaArrowCircleRight
                 onClick={() =>

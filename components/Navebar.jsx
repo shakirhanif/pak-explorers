@@ -27,7 +27,7 @@ export const Navebar = () => {
       <div className="text-white max-w-[1240px] m-auto flex justify-between items-center p-4">
         <Link href="/">
           <h1 style={{ color: `${textColor}` }} className=" font-bold text-2xl">
-            Pak-PhotoAdventurers
+            Pak-Explorers
           </h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden sm:flex">
@@ -76,22 +76,34 @@ export const Navebar = () => {
           }
         >
           <ul>
-            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
+            <li
+              onClick={() => setNav(!nav)}
+              className=" p-4 text-xl hover:text-gray-500"
+            >
               <Link href="/">
                 <h1>Home</h1>
               </Link>
             </li>
-            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
+            <li
+              onClick={() => setNav(!nav)}
+              className=" p-4 text-xl hover:text-gray-500"
+            >
               <Link href="/#gallery">
                 <h1>Gallery</h1>
               </Link>
             </li>
-            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
+            <li
+              onClick={() => setNav(!nav)}
+              className=" p-4 text-xl hover:text-gray-500"
+            >
               <Link href="/work">
                 <h1>Work</h1>
               </Link>
             </li>
-            <li onClick={() => setNav(!nav)} className=" p-4 text-xl hover:text-gray-500">
+            <li
+              onClick={() => setNav(!nav)}
+              className=" p-4 text-xl hover:text-gray-500"
+            >
               <Link href="/contact">
                 <h1>Contact</h1>
               </Link>
